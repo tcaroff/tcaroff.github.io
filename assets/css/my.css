@@ -1,0 +1,40 @@
+.my-carousel-caption {
+ background: rgba(0, 0, 0, 0.8);
+ color: #FFFF00;
+}
+
+.my-highlight {
+ background: #FFD700;
+ color: #fff;
+ font-weight: bold;
+}
+
+.my-description {
+ color: #5d5d5d;
+}
+
+@video-width: 780px;
+
+/* Demo for the ratio here */
+iframe {
+  width: 40vw;
+  max-width: @video-width;
+  height: 25.3125vw;
+}
+
+@media (min-width:@video-width) {
+  iframe {
+    height: calc(@video-width * 0.5628205128205128);
+  }
+}
+
+.my-ratio {
+  min-height:10vh;
+  margin: 0 auto;
+  display: flex;
+}
+.my-content {
+  margin: auto;
+  text-align: center;
+  max-width: 1024px;
+}

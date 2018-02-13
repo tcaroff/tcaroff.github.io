@@ -1655,9 +1655,9 @@
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/1920x1200_wallpaper.jpg");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
 	}
@@ -1673,7 +1673,7 @@
 			}
 
 			#banner header p {
-				color: #d52349;
+				color: #fff;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
