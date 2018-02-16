@@ -39,7 +39,7 @@
 				<!--<nav id="nav">-->
 				<nav>
 					<ul>
-						<li><a href="index.html"><i class="fas fa-arrow-left"></i>    Home</a></li>
+						<li><a href="index.html"><i class="fas fa-arrow-left"></i> Home</a></li>
 					</ul>
 				</nav>
 
@@ -151,16 +151,28 @@
 						<header>
 							<h2>Game overview</h2>
 						</header>
+						<h4 class="my-description">A race-arcade-management card game, theme on super-heroes' employment with procedurally generated content.</h4>
 						<p>
-							<i>Heroes For Hire</i> is a game <b>made in 48h</b> for the <i>WonderJam UQAC Fall 2017</i> gamejam. It's a card game in which you have to manage a job agency for the superheroes with <b>procedurally generated content</b>. You must manage your
-							heroes, have them complete missions before they are given to your competitors, and become the largest employment agency for superheroes.
+							Made for the <i>WonderJam UQAC Fall 2017</i>.<br>
+							<span class="my-highlight"><i class="fas fa-trophy"></i> Winner of the Jam among 28 teams!</span><br>
+							<i class="fas fa-code"></i> <b>Unity, C#</b><br>
+							<i class="fas fa-users"></i> <b>3 devs & 3 beginners</b><br>
+							<i class="fas fa-clock"></i> <b>Made in 48h</b><br>
+							I worked on: <b>code, game design, all UX, art</b>
+						</p>
+						<p>
+							In this game you are in charge of a job agency for the superheroes. You must manage your
+							heroes, have them complete missions before they are given to your competitors, and make your agency become the largest one.<br>
+							You can download the game <a href="https://gamejolt.com/games/HFH/289072">here</a>.
 						</p>
 						<h3>Watch the trailer</h3>
+						<p>
 						<div class="my-ratio">
 							<div class="my-content">
 								<iframe width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://www.youtube.com/embed/3lPWZVU6MOc"></iframe>
 							</div>
 						</div>
+					</p>
 						<h3>The theme and the genres</h3>
 						<p>
 							The theme was about <i><b>"When superheroes have to change jobs ... "</b></i> :
@@ -171,8 +183,7 @@
 									</i>
 								</div>
 							</div>
-
-							Imposed genres for our team (it is necessary to integrate, at least, 2 of the 3 genres):
+							<br>Imposed genres for our team (it is necessary to integrate, at least, 2 of the 3 genres):
 							<div class="mycenter"><b>Arcade, Management and Race.</b></div>
 							Please note that a description of the genres is available below in the section <a href="#genresDescription">Design details</a>.
 						</p>
@@ -186,12 +197,35 @@
 							<h2>Tech details</h2>
 						</header>
 						<p>
-							Made with <b>Unity</b>.
-							<ul>
-								<li>Content generation</li>
-								<li>UI: fully adaptative, content integration</li>
-								<li>Card pooling</li>
-								<li>Sounds manager</li>
+							Made with <b>Unity</b>, coded in <b>C#</b>.
+							<ul class="contact">
+								<li>
+									<h3>Content generation</h3><br>
+									<ul class="divided">
+										<li>The missions are generated with a tree. The first depth of nodes contains the action, the second depth of nodes contains who or what is concerned by the action, and the next depths contain more details like why you have to take action or how to do it. That way the missions have a description.</li>
+										<li>Each node also contains a list of needed attributes at lvl 1, so it is posible to calculate total attributes, money, points and experience at the wanted level. For example the "save" action needs speed.</li>
+										<li>For the heroes generation we had a bank of images representing the classical DC or Marvel heroes and others. For each image, we chose a the associated attributes and different possiblities for their name.</li>
+										<li>Finally we introduced a bit of random in all the calculus process for design purpose.</li>
+									</ul>
+								</li>
+								<li>
+									<h3>UI</h3>
+									<p><br>
+										The UI is fully adaptive to the screen size and cards have been designed with content generation in mind, so that all elements fit.
+									</p>
+								</li>
+								<li>
+									<h3>Cards pooling</h3>
+									<p><br>
+										The game doesn't need a high configuration but instancing is a pretty heavy operation so to be sure that the game would always be fluid we implemented a simple pooling system for heores and missions cards.
+									</p>
+								</li>
+								<li>
+									<h3>Sound manager</h3>
+									<p><br>
+										Due to the high pace of the game, we had to create a sound system that could handle a lot of sounds in parallel. In addition, we wanted the system to dynamically change the music according to the loss conditions: if the player is about to lose, the music becomes more urgent.
+									</p>
+								</li>
 							</ul>
 						</p>
 					</section>
@@ -234,7 +268,6 @@
 							<h2>Postmortem</h2>
 						</header>
 						<p>
-
 						</p>
 					</section>
 				</article>
