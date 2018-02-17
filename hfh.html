@@ -157,22 +157,21 @@
 							<span class="my-highlight"><i class="fas fa-trophy"></i> Winner of the Jam among 28 teams!</span><br>
 							<i class="fas fa-code"></i> <b>Unity, C#</b><br>
 							<i class="fas fa-users"></i> <b>3 devs & 3 beginners</b><br>
-							<i class="fas fa-clock"></i> <b>Made in 48h</b><br>
-							I worked on: <b>code, game design, all UX, art</b>
+							<i class="fas fa-clock"></i> <b>Made in 48h</b><br> I worked on: <b>code, game design, all UX, art</b>
 						</p>
 						<p>
-							In this game you are in charge of a job agency for the superheroes. You must manage your
-							heroes, have them complete missions before they are given to your competitors, and make your agency become the largest one.<br>
-							You can download the game <a href="https://gamejolt.com/games/HFH/289072">here</a>.
+							In this game you are in charge of a job agency for the superheroes. You must manage your heroes, have them complete missions before they are given to your competitors, and make your agency become the largest one.<br> You can download the game
+							<a
+							  href="https://gamejolt.com/games/HFH/289072">here</a>.
 						</p>
 						<h3>Watch the trailer</h3>
 						<p>
-						<div class="my-ratio">
-							<div class="my-content">
-								<iframe width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://www.youtube.com/embed/3lPWZVU6MOc"></iframe>
+							<div class="my-ratio">
+								<div class="my-content">
+									<iframe width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://www.youtube.com/embed/3lPWZVU6MOc"></iframe>
+								</div>
 							</div>
-						</div>
-					</p>
+						</p>
 						<h3>The theme and the genres</h3>
 						<p>
 							The theme was about <i><b>"When superheroes have to change jobs ... "</b></i> :
@@ -202,28 +201,27 @@
 								<li>
 									<h3>Content generation</h3><br>
 									<ul class="divided">
-										<li>The missions are generated with a tree. The first depth of nodes contains the action, the second depth of nodes contains who or what is concerned by the action, and the next depths contain more details like why you have to take action or how to do it. That way the missions have a description.</li>
+										<li>The missions are generated with a tree. The first depth of nodes contains the action, the second depth of nodes contains who or what is concerned by the action, and the next depths contain more details like why you have to take action or how
+											to do it. That way the missions have a description.</li>
 										<li>Each node also contains a list of needed attributes at lvl 1, so it is posible to calculate total attributes, money, points and experience at the wanted level. For example the "save" action needs speed.</li>
-										<li>For the heroes generation we had a bank of images representing the classical DC or Marvel heroes and others. For each image, we chose a the associated attributes and different possiblities for their name.</li>
-										<li>Finally we introduced a bit of random in all the calculus process for design purpose.</li>
+										<li>For the heroes generation we had a bank of images representing the classical DC or Marvel heroes and others. For each image, we chose the associated attributes and different possiblities for their name.</li>
+										<li>Finally we introduced a bit of random in all the calculus process for design purpose and put all the elements together.</li>
 									</ul>
 								</li>
 								<li>
 									<h3>UI</h3>
-									<p><br>
-										The UI is fully adaptive to the screen size and cards have been designed with content generation in mind, so that all elements fit.
+									<p><br> The UI is fully adaptive to the screen size. The cards have been designed with content generation in mind, so all elements can be resize, recolor or change dynamically and fit together.
 									</p>
 								</li>
 								<li>
 									<h3>Cards pooling</h3>
-									<p><br>
-										The game doesn't need a high configuration but instancing is a pretty heavy operation so to be sure that the game would always be fluid we implemented a simple pooling system for heores and missions cards.
+									<p><br> The game doesn't need a high configuration but instancing is a pretty heavy operation so to be sure that the game would always be fluid we implemented a simple pooling system for heores and missions cards.
 									</p>
 								</li>
 								<li>
 									<h3>Sound manager</h3>
-									<p><br>
-										Due to the high pace of the game, we had to create a sound system that could handle a lot of sounds in parallel. In addition, we wanted the system to dynamically change the music according to the loss conditions: if the player is about to lose, the music becomes more urgent.
+									<p><br> Due to the high pace of the game, we had to create a sound system that could handle a lot of sounds in parallel. In addition, we wanted the system to dynamically change the music according to the loss conditions: if the player is about to
+										lose, the music becomes more urgent.
 									</p>
 								</li>
 							</ul>
@@ -239,35 +237,47 @@
 							of the game. The whole frame tend to <b>replicate a comic page</b> separating the frames with white stripes.
 						</p>
 						<h3 id="genresDescription">The genres</h3>
-						<p>The following descriptions have been given by the jam staff.</p>
-						<h4>Arcade</h4>
 						<p>
-							The goal of an arcade game is to make the best performance through multiple sessions. We thus find games with repetitive features and whose duration is, for the most part, relatively short. The player's performance level is normally identified by his
-							score. There may be some form of progression that causes the player to go as far as possible, see until the end of the game. Each arcade game contains an end-of-game condition that requires the player to start over at the beginning. The difficulty
-							level of this style of play is usually high and having a steep learning curve. Roguelike type games easily enter the Arcade category in the context of a GameJam.<br>Examples: (Arcade) Super Crate Box, (Arcade and Competition) Mario vs Luigi,
-							(Arcade and Survival) Crypt of the Necrodancer, Binding of Isaac.
+							The following descriptions have been given by the jam staff. This section does not give details on the game himself but we used these definitions to design the game.
 						</p>
-						<h4>Management</h4>
-						<p>
-							A management game sets up mechanisms, activities, an economy that the player must control and amalgamate in order to create a balance or progress in the world of the game. The video game management focuses on the resource management in order to thrive,
-							it relies heavily on planning and compels the reconciliation of short-term and long-term conflicting demands.<br>Examples: (Management and puzzle) Game Dev Tycoon, (Management and Race) Grand Prix Story, (Management and survival) Shelter,
-							(Management Adventure) Door Kickers, (Management, competition and strategy) Civilization.
-						</p>
-						<h4>Race</h4>
-						<p>
-							A racing game is a game whose goal is usually to progress as fast as possible from one point to another point to win. The search for speed is usually about getting to the goal first, beating a countdown, reducing a completion time, or just to survive.
-							<br>Examples: (Racing and Adventure) GTA, Need for Speed ​​Hot Pursuit, (Race and Survival) Distance, (Race and Puzzle) Nimbus, Tile Rider, (Race and Multiplayer Competition) SpeedRunner, (Racing and Exploration) Hover: Revolt Of Gamers, Mirror
-							Edge.
-						</p>
+						<details>
+							<summary>
+								<p><a class="button alt">Continue Reading / Close</a></p>
+							</summary>
+
+							<h4>Arcade</h4>
+							<p>
+								The goal of an arcade game is to make the best performance through multiple sessions. We thus find games with repetitive features and whose duration is, for the most part, relatively short. The player's performance level is normally identified by his
+								score. There may be some form of progression that causes the player to go as far as possible, see until the end of the game. Each arcade game contains an end-of-game condition that requires the player to start over at the beginning. The difficulty
+								level of this style of play is usually high and having a steep learning curve. Roguelike type games easily enter the Arcade category in the context of a GameJam.<br>Examples: (Arcade) Super Crate Box, (Arcade and Competition) Mario vs Luigi,
+								(Arcade and Survival) Crypt of the Necrodancer, Binding of Isaac.
+							</p>
+							<h4>Management</h4>
+							<p>
+								A management game sets up mechanisms, activities, an economy that the player must control and amalgamate in order to create a balance or progress in the world of the game. The video game management focuses on the resource management in order to thrive,
+								it relies heavily on planning and compels the reconciliation of short-term and long-term conflicting demands.<br>Examples: (Management and puzzle) Game Dev Tycoon, (Management and Race) Grand Prix Story, (Management and survival) Shelter,
+								(Management Adventure) Door Kickers, (Management, competition and strategy) Civilization.
+							</p>
+							<h4>Race</h4>
+							<p>
+								A racing game is a game whose goal is usually to progress as fast as possible from one point to another point to win. The search for speed is usually about getting to the goal first, beating a countdown, reducing a completion time, or just to survive.
+								<br>Examples: (Racing and Adventure) GTA, Need for Speed ​​Hot Pursuit, (Race and Survival) Distance, (Race and Puzzle) Nimbus, Tile Rider, (Race and Multiplayer Competition) SpeedRunner, (Racing and Exploration) Hover: Revolt Of Gamers, Mirror
+								Edge.
+							</p>
+						</details>
 
 
 						<h3>Theme and genres integration</h3>
+						<p>
+							Soon available.
+						</p>
 					</section>
 					<section>
 						<header>
 							<h2>Postmortem</h2>
 						</header>
 						<p>
+							Soon available.
 						</p>
 					</section>
 				</article>
