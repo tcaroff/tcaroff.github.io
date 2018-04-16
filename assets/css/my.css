@@ -17,6 +17,12 @@
  font-weight: bold;
 }
 
+.my-highlight2 {
+ background: #ff1a75;
+ color: #fff;
+ font-weight: bold;
+}
+
 .my-description {
  color: #5d5d5d;
 }
