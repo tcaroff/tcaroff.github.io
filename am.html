@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Ave Mortem</title>
+	<title>[Game Jam] Heroes For Hire</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -16,7 +16,9 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+	<!--
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -31,36 +33,13 @@
 			<div id="header">
 
 				<!-- Logo -->
-				<h1>Ave Mortem</h1>
+				<h1>[Game Jam] Heroes For Hire</h1>
 
 				<!-- Nav -->
-				<!--<nav id="nav">--><nav>
+				<!--<nav id="nav">-->
+				<nav>
 					<ul>
-						<li><a href="index.html"><i class="fas fa-arrow-left"></i>    Home</a></li>
-						<!--
-									<li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Veroeros feugiat</a></li>
-													<li><a href="#">Nisl sed aliquam</a></li>
-													<li><a href="#">Dolore adipiscing</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li class="current"><a href="no-sidebar.html">No Sidebar</a></li>
-								-->
+						<li><a href="index.html"><i class="fas fa-arrow-left"></i> Home</a></li>
 					</ul>
 				</nav>
 
@@ -72,6 +51,8 @@
 			<div class="container">
 
 
+				<!-- Carousel -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 				<!--<div class="container"> -->
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 					<!-- Indicators -->
@@ -81,21 +62,32 @@
 						<li data-target="#myCarousel" data-slide-to="2"></li>
 						<li data-target="#myCarousel" data-slide-to="3"></li>
 						<li data-target="#myCarousel" data-slide-to="4"></li>
+						<li data-target="#myCarousel" data-slide-to="5"></li>
+						<li data-target="#myCarousel" data-slide-to="6"></li>
+						<li data-target="#myCarousel" data-slide-to="7"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 
 						<div class="item active">
-							<img src="images/HFF_logo.png" alt="HFF Logo" style="width:100%;">
+							<img src="images/HFH_logo.png" alt="Logo" style="width:100%;">
 							<div class="carousel-caption">
-								<h3><span class="my-carousel-caption">HFF Logo</span></h3>
+								<h3><span class="my-carousel-caption">Logo</span></h3>
 								<p><span class="my-carousel-caption">With such a logo, the game can only be great.</span></p>
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="images/HFF_commonView.png" alt="Game view" style="width:100%;">
+							<img src="images/HFH_trophy.png" alt="" style="width:100%;">
+						</div>
+
+						<div class="item">
+							<img src="images/HFH_ceremony.jpg" alt="Game view" style="width:100%;">
+						</div>
+
+						<div class="item">
+							<img src="images/HFH_commonView.png" alt="Game view" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Game view</span></h3>
 								<p><span class="my-carousel-caption">Manage your heroes, make them success in missions and become the bigger employment agency for super-heroes!</span></p>
@@ -103,7 +95,15 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HFF_mission.png" alt="Mission window" style="width:100%;">
+							<img src="images/HFH_windowsDescription.png" alt="Windows description" style="width:100%;">
+							<div class="carousel-caption">
+								<h3><span class="my-carousel-caption">Windows description</span></h3>
+								<p><span class="my-carousel-caption"></span></p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/HFH_mission.png" alt="Mission window" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Mission window</span></h3>
 								<p><span class="my-carousel-caption">Make sure you meet the criteria before the mission pass away!</span></p>
@@ -111,7 +111,7 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HFF_leaderboard.png" alt="Leaderboard" style="width:100%;">
+							<img src="images/HFH_leaderboard.png" alt="Leaderboard" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Leaderboard</span></h3>
 								<p><span class="my-carousel-caption">Do. Or do not. There is no try.</span></p>
@@ -119,7 +119,7 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HFF_tuto.png" alt="Tutorial and (kind of) story" style="width:100%;">
+							<img src="images/HFH_tuto.png" alt="Tutorial and (kind of) story" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Tutorial and (kind of) story</span></h3>
 								<p><span class="my-carousel-caption">It's essential to learn first.</span></p>
@@ -139,65 +139,148 @@
 				    </a>
 				</div>
 				<!--</div> -->
+				<link rel="stylesheet" href="assets/css/main.css" />
+				<link rel="stylesheet" href="assets/css/my.css" />
 
 
 				<!-- Content -->
 				<article class="box post">
 					<!--<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>-->
-					<header>
-						<h2>Ave Mortem</h2>
-					</header>
+
 					<section>
 						<header>
-							<h3>Game overview</h3>
+							<h2>Game overview</h2>
 						</header>
-						<!--<div class="my-ratio">
-							<div class="my-content">
-								<iframe width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://www.youtube.com/embed/3lPWZVU6MOc"></iframe>
+						<h4 class="my-description">A race-arcade-management card game, theme on super-heroes' employment with procedurally generated content.</h4>
+						<p>
+							Made for the <em>WonderJam UQAC Fall 2017</em>.<br>
+							<span class="my-highlight"><i class="fas fa-trophy"></i> Winner of the Jam among 28 teams!</span><br>
+							<i class="fas fa-code"></i> <strong>Unity, C#, procedural generation</strong><br>
+							<i class="fas fa-users"></i> <strong>3 devs & 3 beginners</strong><br>
+							<i class="fas fa-clock"></i> <strong>Made in 48h, Fall 2017</strong><br>
+							I worked on: <strong>code, game design, all UX, some art</strong>
+						</p>
+						<p>
+							In this game you are in charge of a job agency for the superheroes. You must manage your heroes, have them complete missions before they are given to your competitors and make your agency become the largest one.<br>
+							<i class="fas fa-download"></i> You can download the game
+							<a href="https://gamejolt.com/games/HFH/289072" target="_blank">
+								on gamejolt
+							</a>.
+						</p>
+						<h3>Watch the trailer</h3>
+						<p>
+							<div class="my-ratio">
+								<div class="my-content">
+									<iframe width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://www.youtube.com/embed/3lPWZVU6MOc"></iframe>
+								</div>
 							</div>
-						</div>-->
-						<p>
-							Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis. placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc
-							suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet nullam consequat feugiat dolore tempus. Elementum odio
-							duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis. placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc suspendisse
-							nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
 						</p>
+						<h3>The theme and the genres</h3>
 						<p>
-							Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum
-							dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet nullam consequat feugiat dolore tempus.
+							The theme was about <em><strong>“When superheroes have to change jobs...”</strong></em> :
+							<div class="my-ratio">
+								<div class="my-content">
+									<em>
+										We are in 2044, the President of the United States, Ivanka Trump, has managed to establish a lasting peace in the world. Thanks to superheroes, all the villains of the Earth have been defeated. In addition, the abolition of the legal profession and the disappearance of social inequalities has restored harmony across the planet. The only problem is that in this context, the superheroes who have done so much for the world are now... unemployed! What to do all these super powers? How to make them useful otherwise? These questions remain...
+									</em>
+								</div>
+							</div>
+							<br>Imposed genres for our team (it is necessary to integrate at least 2 of the 3 genres):
+							<div class="mycenter"><strong>Arcade, Management and Race.</strong></div>
+							Please note that a description of the genres is available below in the section <a href="#genresDescription">Design details</a>.
 						</p>
-					</section>
-					<section>
-						<header>
-							<h3>Tech details</h3>
-						</header>
+						<h3>The team</h3>
 						<p>
-							Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis. placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc
-							suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet nullam consequat feugiat dolore tempus. Elementum odio
-							duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis. placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc suspendisse
-							nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
-						</p>
-						<p>
-							Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum
-							dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet nullam consequat feugiat dolore tempus.
+							The team consisted of 6 people who did not know each other. The 5 other were in first year of higher education with <strong>3 programmers and 3 beginners</strong>.
 						</p>
 					</section>
 					<section>
 						<header>
-							<h3>Design details</h3>
+							<h2>Tech details</h2>
 						</header>
 						<p>
-							Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum
-							dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
+							Made with <strong>Unity</strong>, coded in <strong>C#</strong>.
+							<ul class="contact">
+								<li>
+									<h3>Content generation</h3><br>
+									<ul class="divided">
+										<li>The missions are generated with a tree. The first depth of nodes contains the action, the second depth of nodes contains who or what is concerned by the action, and the next depths contain more details like why you have to take action or how
+											to do it. That way the missions have a description.</li>
+										<li>Each node also contains a list of needed attributes at lvl 1, so it is possible to calculate total attributes, money, points and experience at the wanted level. For example the “save” action needs speed.</li>
+										<li>For the heroes' generation we had a bank of images representing the classical DC or Marvel heroes and others. For each image, we chose the associated attributes and different possibilities for their name.</li>
+										<li>Finally, we introduced a bit of random in all the calculus process for design purpose and we put all the elements together.</li>
+									</ul>
+								</li>
+								<li>
+									<h3>UI</h3>
+									<p><br> The UI is fully adaptable to the screen size. The cards have been designed with content generation in mind, so all elements can be resized, recolored or changed dynamically and all fit together.
+									</p>
+								</li>
+								<li>
+									<h3>Cards pooling</h3>
+									<p><br> The game doesn't need a high configuration but instancing is a pretty heavy operation so to be sure that the game would always run fluidly we implemented a simple pooling system for heroes and missions cards.
+									</p>
+								</li>
+								<li>
+									<h3>Sound manager</h3>
+									<p><br> Due to the high pace of the game, we had to create a sound system that could handle a lot of sounds in parallel. In addition, we wanted the system to dynamically change the music according to the loss conditions: if the player is about to
+										lose, the music becomes more urgent.
+									</p>
+								</li>
+							</ul>
 						</p>
 					</section>
 					<section>
 						<header>
-							<h3>Postmortem</h3>
+							<h2>Design details</h2>
+						</header>
+						<h3>The art</h3>
+						<p>
+							The art direction is <strong>fully inspired by old comics</strong>. Each hero is represented by a card just <strong>like a comic's cover</strong>, where his name, his abilities, his price and his salary are displayed. This way <strong>all the information is part of the diegesis
+							of the game</strong>. The whole frame tends to <strong>replicate a comic page</strong> separating the frames with white stripes.
+						</p>
+						<h3 id="genresDescription">The genres</h3>
+						<p>
+							The following descriptions have been given by the jam staff. This section does not give details on the game himself, but we used these definitions to design the game.
+						</p>
+						<details>
+							<summary>
+								<p><a>Continue Reading / Close</a></p>
+							</summary>
+
+							<h4>Arcade</h4>
+							<p>
+								The goal of an arcade game is to make the best performance through multiple sessions. We thus find games with repetitive features and whose duration is, for the most part, relatively short. The player's performance level is normally identified by his
+								score. There may be some form of progression that causes the player to go as far as possible, see until the end of the game. Each arcade game contains an end-of-game condition that requires the player to start over at the beginning. The difficulty
+								level of this style of play is usually high and having a steep learning curve. Roguelike type games easily enter the Arcade category in the context of a GameJam.<br>Examples: (Arcade) Super Crate Box, (Arcade and Competition) Mario vs Luigi,
+								(Arcade and Survival) Crypt of the Necrodancer, Binding of Isaac.
+							</p>
+							<h4>Management</h4>
+							<p>
+								A management game sets up mechanisms, activities, an economy that the player must control and amalgamate in order to create a balance or progress in the world of the game. The video game management focuses on the resource management in order to thrive,
+								it relies heavily on planning and compels the reconciliation of short-term and long-term conflicting demands.<br>Examples: (Management and puzzle) Game Dev Tycoon, (Management and Race) Grand Prix Story, (Management and survival) Shelter,
+								(Management Adventure) Door Kickers, (Management, competition and strategy) Civilization.
+							</p>
+							<h4>Race</h4>
+							<p>
+								A racing game is a game whose goal is usually to progress as fast as possible from one point to another point to win. The search for speed is usually about getting to the goal first, beating a countdown, reducing a completion time, or just to survive.
+								<br>Examples: (Racing and Adventure) GTA, Need for Speed ​​Hot Pursuit, (Race and Survival) Distance, (Race and Puzzle) Nimbus, Tile Rider, (Race and Multiplayer Competition) SpeedRunner, (Racing and Exploration) Hover: Revolt Of Gamers, Mirror
+								Edge.
+							</p>
+						</details>
+
+
+						<h3>Theme and genres integration</h3>
+						<p>
+							Soon available.
+						</p>
+					</section>
+					<section>
+						<header>
+							<h2>Postmortem</h2>
 						</header>
 						<p>
-							Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem ipsum
-							dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
+							Soon available.
 						</p>
 					</section>
 				</article>
@@ -205,127 +288,7 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
-		<!--
-		<div id="footer-wrapper">
-			<section id="footer" class="container">
 
-						<div class="row">
-							<div class="8u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Blandit nisl adipiscing</h2>
-									</header>
-									<ul class="dates">
-										<li>
-											<span class="date">Jan <strong>27</strong></span>
-											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>23</strong></span>
-											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>15</strong></span>
-											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
-											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>12</strong></span>
-											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>10</strong></span>
-											<h3><a href="#">Blandit tempus aliquam?</a></h3>
-											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>What's this all about?</h2>
-									</header>
-									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-									<p>
-										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-									</p>
-									<footer>
-										<a href="#" class="button">Find out more</a>
-									</footer>
-								</section>
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Tempus consequat</h2>
-									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Ipsum et phasellus</h2>
-									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Vitae tempor lorem</h2>
-									</header>
-									<ul class="social">
-										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
-										<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-										<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
-										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
-									</ul>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<p>
-												Untitled Incorporated<br />
-												1234 Somewhere Road Suite<br />
-												Nashville, TN 00000-0000
-											</p>
-										</li>
-										<li>
-											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>-->
 		<div class="row">
 			<div class="12u">
 
