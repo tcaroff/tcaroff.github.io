@@ -67,7 +67,7 @@
 					<div class="carousel-inner">
 
 						<div class="item active">
-							<img src="images/HVRT_grab.png" alt="Object grabbing" style="width:100%;">
+							<img src="images/HVRT_grab.jpg" alt="Object grabbing" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Object grabbing</span></h3>
 								<p><span class="my-carousel-caption"></span></p>
@@ -75,7 +75,7 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HVRT_camera.png" alt="Camera tool" style="width:100%;">
+							<img src="images/HVRT_camera.jpg" alt="Camera tool" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Camera tool</span></h3>
 								<p><span class="my-carousel-caption">Use the camera tool with post-processing and NVIDIA Ansel technology to make beautifull shots.</span></p>
@@ -83,7 +83,7 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HVRT_wallTool.png" alt="Wall tool" style="width:100%;">
+							<img src="images/HVRT_wallTool.jpg" alt="Wall tool" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Wall tool</span></h3>
 								<p><span class="my-carousel-caption">Resize and move the box to make a wall.</span></p>
@@ -91,7 +91,7 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HVRT_toolUI.png" alt="Tools UI" style="width:100%;">
+							<img src="images/HVRT_toolUI.jpg" alt="Tools UI" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Tools UI</span></h3>
 								<p><span class="my-carousel-caption">Show seated mode, time setting, laser measure, wall tool, teleportation platform, volume measure for furnitures and camera tool.</span></p>
@@ -99,7 +99,7 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HVRT_beam.png" alt="Beam and groups" style="width:100%;">
+							<img src="images/HVRT_beamAndGroups.jpg" alt="Beam and groups" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Beam and groups</span></h3>
 								<p><span class="my-carousel-caption">You can use the beam to teleport, select and modify objects, move them, make groups, etc.</span></p>
@@ -107,7 +107,7 @@
 						</div>
 
 						<div class="item">
-							<img src="images/HVRT_scene.png" alt="Scene used" style="width:100%;">
+							<img src="images/HVRT_scene.jpg" alt="Scene used" style="width:100%;">
 							<div class="carousel-caption">
 								<h3><span class="my-carousel-caption">Scene used for development</span></h3>
 								<p><span class="my-carousel-caption"></span></p>
@@ -214,70 +214,68 @@
 
 							<h4>Teleportation</h4>
 							<p>
-								The beam is used to teleport. When it is blue, it points to an area that does not allow teleportation, and when it is green the target authorizes it. For this type of movement it would also have been possible to consider a parabolic beam, but after many tests the straight beam seems faster and more accurate to use. This function has been placed on the click of the touch button: it is the movement that will be most often reproduced to navigate in furnished spaces, so it must be very fast and light, which offers the click of the touch button. It also keeps the trigger for interaction with objects where its use is very natural, which requires more effort for the index (this can be painful after a few hours of intensive use of the trigger), and is slower. The teleportation gives rise to a fade to black to limit the motion sickness.
+								The beam is used to teleport. When it is blue, it points to an area that does not allow teleportation, and when it is green the target authorizes it. For this type of movement it would also have been possible to consider a parabolic beam, but after many tests the straight beam seems faster and more accurate to use. This function has been placed on the click of the touch button: it is the movement that will be most often reproduced to navigate in furnished spaces, so it must be very fast and light, which offers the click of the touch button. It also keeps the trigger free for interaction with objects where its use is very natural, which requires more effort for the index (this can be painful after a few hours of intensive use of the trigger), and is slower. The teleportation produce a fade to black to limit the motion sickness.
 							</p>
 
 							<h4>Handling furniture and objects</h4>
 							<p>
-								Objects and furnitures can be grasped with the controller as well as with the beam. When an object passes within range of one controller it is highlighted. The button associated with this action is the trigger, which allows a very intuitive use where the user acts as if he were holding the object in his hands.<br>
+								Objects and furnitures can be grasped with the controller as well as with the beam. Objects are highlighted when they passe within the range of one controller. The button associated with this action is the trigger, which allows a very intuitive when the user acts as if he is holding the object in his hands.<br>
 								In this case the movements of the controller and the beam are used to move the object which becomes fixed relative to its point of attachment, namely the controller or the point of intersection with the laser, which allows to manipulate it to wish and in a natural way. All objects are subject to gravity and other forces, it is then possible to throw objects and observe the physical simulation, or to push an object with the help of another, which adds a very playful aspect.<br>
-								When an object is captured using the beam, the user can move it closer to or away from it using the touch capabilities of the center button. Put the thumb in y > 0 make the object move away, and vice versa in y < 0. Bigger | y | is, speeder the oject will be.
+								When an object is captured using the beam, the user can move it closer to or away from him using the touch capabilities of the center button. Put the thumb in y > 0 make the object move away, and vice versa in y < 0. Bigger | y | is, speeder the movement will be.
 							</p>
 
 							<h4>Object selection</h4>
 							<p>
-								It is possible to select an object using the pointer. When the beam points to an object or a piece of furniture (so it is highlighted) it is selectable by clicking on the touch button, and deselectable with the same procedure. The object is then surrounded by an outline to identify it.
-								Once selected, the furniture can be edited in the corresponding tab of the interface. It can be frozen to no longer be affected by forces like gravity. This option is very convenient to put a shelf or fix an object in its final place, without the risk of jostling it by manipulating other objects. He can become a ghost, only if he is frozen, so he can not collide with other objects or the scenery. The typical case of using this option is when the user wants to fit one object into another, such as a pillow in a sofa or a chandelier on the ceiling. This option increases the realism of the scene when collision masks make it impossible to achieve the desired result, or to place an object more easily.
+								It is possible to select an object with the pointer. When the beam points to an object or a piece of furniture (so it is highlighted) it is selectable by clicking on the touch button, and deselectable with the same procedure. The object is then surrounded by an outline to identify it.
+								Once selected, the furniture can be edited in the corresponding tab of the interface. It can be frozen to no longer be affected by forces like gravity. This option is very convenient to put a shelf or fix an object in its final place, without the risk of jostling it by manipulating other objects. It can become a ghost, only if it is frozen, so it can not collide with other objects or the scenery. The typical case of using this option is when the user wants to fit one object into another, such as a pillow in a sofa or a chandelier on the ceiling. This option increases the realism of the scene when collision masks make impossible to achieve the desired result, or to place an object more easily.
 								It is possible to display and edit to the nearest degree the rotation of an object along the three axes of space. It can be copied or deleted. Finally all the colors or versions of the object are displayed and selectable on this same tab of the interface.
 							</p>
 
 							<h4>Wall selection</h4>
 							<p>
-								A wall is selected in the same way as an object. Once a wall is selected it is possible to choose its appearance (texture, color ...) from the catalog.
+								A wall is selected as objects are. Once a wall is selected it is possible to choose its appearance (texture, color ...) from the catalog.
 							</p>
 
-							<h4>Accessiblity tool for people with reduced mobility or seated work</h4>
+							<h4>Accessiblity tool for people with reduced mobility or for seated work</h4>
 							<p>
-								These are two buttons that can rotate the avatar 45 ° on itself. This tool allows in particular to develop (or furnish in the case of future users) without having to get up too regularly or catch a stiff neck by turning the head from its seat, but also increases the accessibility of the application for people in motor handicap situation.
+								These are two buttons that can rotate the avatar 45° on itself. This tool allows in particular to develop (or furnish in the case of future users) without having to get up too regularly or catch a stiff neck by turning the head from his seat, but also increases the accessibility of the application for people in motor handicap situation.
 							</p>
 
 							<h4>Time setting</h4>
 							<p>
-								A scroll bar allows you to change the time and thus the lighting of the scene.
+								A scroll bar allows you to change the time and thus the sun-lighting of the scene.
 							</p>
 
 							<h4>Wall creation</h4>
 							<p>
-								Il est possible de créer un mur. L’outil utilisé pour cela est un parallélépipède rectangle qui dispose d’une poignée sur chaque face, présenté sur l’image ci-contre. Il est possible de saisir ces poignées et de déplacer la face correspondante
-								selon son axe orthogonal pour modifier les dimensions du mur à créer. Concrètement c’est une boîte dont les dimensions sont modifiables. Une autre poignée est disponible pour déplacer le conteneur. Le conteneur est visible en surbrillance à
-								travers les objets de façon à éviter d’avoir un trou entre deux murs. Visuellement, lors de la création du mur, c’est un cube qui est créé mais chaque face est sélectionnable indépendamment.
+								It is possible to create a wall. The tool used for this is a rectangular parallelepiped with one handle on each side. It is possible to grab these handles and move the corresponding face along its orthogonal axis to change the dimensions of the wall to create. Concretely it is a box whose dimensions are modifiable. Another handle is used to move the container. The container is highlighted through the objects so as to avoid having a hole between two walls. Visually, when creating the wall, a cube is created but each face is independently selectable.
 							</p>
 
 							<h4>Double checking template for furnitures</h4>
 							<p>
-								This tool is used to filter furniture, and is very similar to that of creating walls except that it has two containers. The idea is that to furnish a given space, the architect will look for a piece of furniture of a relatively precise size so that it occupies space as it should. The outer template gives the maximum size allowed for the piece of furniture, and the inner template the minimum size. Only furniture that meets the requirements in width, depth and height will then be displayed in the catalog at that time.
+								This tool is used to filter furniture, and is very similar to that of creating walls except that it has two containers. The idea is that to furnish a given space, the architect will look for a piece of furniture of a relatively precise size so that it occupies space as it should. The outer template gives the maximum size allowed for the piece of furniture, and the inner template the minimum size. Only furnitures that meet the requirements in width, depth and height will then be displayed in the catalog at that time.
 							</p>
 
 							<h4>Teleportation platform</h4>
 							<p>
-								In order to remain accessible to most, the teleportation is restricted to the ground (or surfaces designated as teleportation zone as the stairs). To reach high places it is possible to use a platform, movable like the other objects (except that it will keep its orientation to stay flat), to teleport on and come back (in case the teleportation would project the user out of the scene) with the help of two buttons. This platform can also be used to take a more distant point of view, and is translucent but with a presence marked enough to avoid too strong feelings of vertigo once on it.
+								In order to remain accessible to most, the teleportation is restricted to the ground (or surfaces designated as teleportation zone as the stairs). To reach high places it is possible to use a platform, movable like the other objects (except that it will keep its orientation to stay flat), to teleport on and come back (in case the teleportation would project the user out of the scene) with the help of two buttons. This platform can also be used to take a more distant point of view, and is translucent but with a presence marked enough to avoid too strong feelings of vertigo when the user stands on it.
 							</p>
 
 							<h4>Groups</h4>
 							<p>
-								It is possible to create groups to design more complex structures without having to redo everything when it is necessary to manipulate them. For example if the user wants to compose a tray with many overlapping elements, or a library filled with books, he can move these structures easily. The hierarchy of a group and its subgroups is a tree, the root object is the owner of the group (the library) and it moves with all its children (the books). Each son can be moved independently, and he will maintain his relative position in relation to his father. In addition each son can own a group (the book at the base of a pile of books for example). The tool is presented on the image opposite.
+								It is possible to create groups to design more complex structures without having to redo everything when it is necessary to manipulate them. For example if the user wants to compose a tray with many overlapping elements, or a library filled with books, he can move these structures easily. The hierarchy of a group and its subgroups is a tree, the root object is the owner of the group (the library) and it moves with all its children (the books). Each son can be moved independently, and it will maintain its relative position in relation to its father. In addition each son can own a group (the book at the base of a pile of books for example).
 							</p>
 
 							<h4>Generation of visual renderings</h4>
 							<p>
-								One of the architects' main demands was the ability to take screenshots for clients. Indeed, one of the objective of this application is to be able to do without subcontracting to realize the renderings in computer-generated image, and thus to carry out the renderings directly in the application.
-								For that a button makes appear a camera in the scene, as in the image opposite. The camera serves a dual purpose. The first is to be able to generate high quality renderings. The second is to be able to visit out of virtual reality, without having to capture the image directly from the headphones, which is usually shaking and can cause motion sickness (as is quite visible in the video demonstration). The difference is in fact between fixing a camera on the user's head, or providing a camera in his hands. The camera thus has a screen so that the user in the virtual reality knows what he is filming, and the rendering visible on this screen is the same as that visible on the screen of the computer when the application is executed (and the activated tool, otherwise it is the helmet view that is active).
-								In addition, this camera embeds the NVIDIA Ansel technology, which allows you to generate all kinds of renderings in an application: high-definition screen shot up to 63,360 × 35,640 pixels (although the application resolution is 1080p) , capture in 360 ° and / or binocular (also available in high definition), to add particular effects of colorization, or to modify the field of vision. Moreover, the camera in question makes it possible to apply all the desired rendering and post-processing effects which are not currently supported by the camera used for the projection in the helmet. This is a tool that makes it easy to generate high quality customer results.
+								One of the architects' main demand was the ability to take screenshots for clients. Indeed, one of the objective of this application is to be able to do without subcontracting to realize the renderings in computer-generated image, and thus to carry out the renderings directly in the application.
+								For that a button makes appear a camera in the scene. The camera serves a dual purpose. The first is to be able to generate high quality renderings. The second is to be able to visit out of virtual reality, without having to capture the image directly from the headset, which is usually shaking and can cause motion sickness (as is quite visible in the video demonstration). The difference is in fact between fixing a camera on the user's head, or providing a camera in his hands. The camera thus has a screen so that the user in the virtual reality knows what he is filming, and the rendering visible on this screen is the same as that visible on the screen of the computer when the application is executed (and the activated tool, otherwise it is the headset view that is active).
+								In addition, this camera embeds the NVIDIA Ansel technology, which allows you to generate all kinds of renderings in an application: high-definition screenshots up to 63,360 × 35,640 pixels (although the application resolution is 1080p), capture in 360° and / or binocular (also available in high definition), to add particular effects of colorization, or to modify the field of vision. Moreover, the camera in question makes it possible to apply all the desired rendering and post-processing effects which are not currently supported by the camera used for the projection in the headset. This is a tool that makes it easy to generate high quality images for customers.
 							</p>
 
 							<h4>UI</h4>
 							<p>
-								To manage all these tools, a clickable interface with the beam can be displayed using the menu button (Application menu in Figure 2, above the touch button). It has several tabs in which the tools are distributed. This interface has been designed with a size that allows to read the text but hides the scene as little as possible. It appears next to the user so that he looks always visible. The tool interface is shown in Figure 7.
+								To manage all these tools, a interface clickable with the beam can be displayed using the menu button. It has several tabs in which the tools are distributed. This interface has been designed with a size that allows to read the text but hides the scene as little as possible. It appears next to the user so that it looks always visible.
 							</p>
 						</details>
 
