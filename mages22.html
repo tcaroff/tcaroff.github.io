@@ -109,11 +109,10 @@
 						<p>
 							<i class="fas fa-code"></i> <strong>Entity-Component-System pattern, C++, NVIDIA Flex, Wwise, OpenSceneGraph</strong><br>
 							<i class="fas fa-users"></i> <strong>7 devs, mob programming</strong><br>
-							<i class="fas fa-clock"></i> <strong>5 weeks, Fall 2017</strong><br>
-							I worked on: <strong>management, project architecture, Flex integration</strong>
+							<i class="fas fa-clock"></i> <strong>5 weeks, Fall 2017</strong><br> I worked on: <strong>management, project architecture, Flex integration</strong>
 						</p>
 						<p>
-							This project is a draft of a 3D game engine in which we wanted to explore new technologies and technologies used in the industry. We took the opportunity to try new management et production technics and finally it was very (very) instructive
+							This project is a draft of a 3D game engine in which we wanted to explore new technologies and technologies used in the industry. We took the opportunity to try new management and production techniques, so finally it was very (very) instructive.
 						</p>
 					</section>
 					<section>
@@ -124,7 +123,8 @@
 							Coded in <strong>C++</strong>.
 							<ul class="contact">
 								<li>
-									<h3>Engine architecture</h3><br>Soon available.<!--
+									<h3>Engine architecture</h3><br>Soon available.
+									<!--
 									<ul class="divided">
 										<li>Entity-Component-System pattern</li>
 									</ul>-->
@@ -151,9 +151,25 @@
 						<header>
 							<h2>Postmortem</h2>
 						</header>
+						<h3>What went well</h3>
 						<p>
-							Soon available.
+							The ECS pattern makes possible to set up a first draft very quickly. It is very functional and efficient and although we have made more difficult implementation choices for optimization reasons, the overall engine structure remains very simple, extensible
+							and maintainable. Moreover, having studied this design pattern we understand why it is also widely used in the industry and what are the good uses, especially for a motor like Unity whose ECS is in development.
 						</p>
+						<p>
+							The team was pretty big, on a fairly short project so it had to be very organized. First we have developed the heart of the engine all together thanks to the mob programming: it consists of bringing together all the members of the team in front of a single
+							machine and to develop together. I had heard about this organization on a developer forum and I wanted to test it for a while and this project was perfect for that. Indeed, even if it may seem anti-productive a priori this is not the case at all.
+							In the context of this project, the heart of the engine was the most important because it is what we had to study. By working on it at the same time it allowed all team members to share project knowledge and the product code was of excellent quality
+							because seven heads think better than one. Regarding productivity, I would quote <a href="https://underthehood.meltwater.com/blog/2016/06/01/mob-programming/">an interesting article</a> to consult: “Here’s the crux of it, typing isn’t the
+							bottleneck in software development, and writing code isn’t building a product. The real cost is solving the problem, waste, and rework. Mob Programming addresses all those things and more.” . Subsequently, we went back to a more classic scrum /
+							pair programming development, which was more flexible in a context where everyone had their obligations.
+							<h3>What went wrong</h3>
+							<p>
+								The project did not lead as far as we hoped. In fact, we have not managed to properly integrate most technologies. The project was too short for that, and the technologies were not necessarily well chosen. For example, I've been following FLEX since 2014
+								and I really wanted to work on it. So we selected it naively saying to ourselves that an NVIDIA technology should be a good option, especially considering the awesome demo. However, we quickly realized that there was almost no documentation, it
+								was not up to date, it did not even correspond to the prototypes of API's functions (WTF?) and the Demo code was absolutely despicable and unreadable. Wwise posed other problems, but for a technology so widely used I was expecting something else.
+								Two things to remember about this: it is not because a technology is used in the industry that it is well thought for the user, and it is a good idea to take more time to choose the technologies that we will use.
+							</p>
 					</section>
 				</article>
 

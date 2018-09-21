@@ -23,6 +23,12 @@
  font-weight: bold;
 }
 
+.my-highlight3 {
+ background: #ffff00;
+ color: #000;
+ font-weight: bold;
+}
+
 .my-description {
  color: #5d5d5d;
 }

@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Modern C++ design</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/my.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+	<!--
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<link href="assets/css/prism.css" rel="stylesheet" />
+	<script src="assets/js/prism.js"></script>
+
+
+</head>
+
+<body class="no-sidebar">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+
+				<!-- Logo -->
+				<h1>Modern C++ design</h1>
+
+				<!-- Nav -->
+				<!--<nav id="nav">-->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html"><i class="fas fa-arrow-left"></i> Home</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div class="container">
+
+
+				<!-- Content -->
+				<article class="box post">
+					<!--<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>-->
+
+					<section>
+						<header>
+							<h2>Project overview</h2>
+						</header>
+						<h4 class="my-description">A race-arcade-management card game, theme on super-heroes' employment with procedurally generated content.</h4>
+						<p>
+							Made for the <em>WonderJam UQAC Fall 2017</em>.<br>
+
+							<pre class="line-numbers">
+								<code class="language-cpp">
+									int pouet;
+									int pouett;
+								</code>
+							</pre>
+							<br>
+
+							<span class="my-highlight"><i class="fas fa-trophy"></i> Winner of the Jam among 28 teams!</span><br>
+							<i class="fas fa-code"></i> <strong>Unity, C#, procedural generation</strong><br>
+							<i class="fas fa-users"></i> <strong>3 devs & 3 beginners</strong><br>
+							<i class="fas fa-clock"></i> <strong>Made in 48h, Fall 2017</strong><br> I worked on: <strong>code, game design, all UX, some art</strong>
+						</p>
+						<p>
+							In this game you are in charge of a job agency for the superheroes. You must manage your heroes, have them complete missions before they are given to your competitors and make your agency become the largest one.<br>
+							<i class="fas fa-download"></i> You can download the game
+							<a href="https://gamejolt.com/games/HFH/289072" target="_blank">
+								on gamejolt
+							</a>.
+						</p>
+
+						<h3>The theme and the genres</h3>
+						<p>
+							The theme was about <em><strong>“When superheroes have to change jobs...”</strong></em> :
+							<div class="my-ratio">
+								<div class="my-content">
+									<em>
+										We are in 2044, the President of the United States, Ivanka Trump, has managed to establish a lasting peace in the world. Thanks to superheroes, all the villains of the Earth have been defeated. In addition, the abolition of the legal profession and the disappearance of social inequalities has restored harmony across the planet. The only problem is that in this context, the superheroes who have done so much for the world are now... unemployed! What to do all these super powers? How to make them useful otherwise? These questions remain...
+									</em>
+								</div>
+							</div>
+							<br>Imposed genres for our team (it is necessary to integrate at least 2 of the 3 genres):
+							<div class="mycenter"><strong>Arcade, Management and Race.</strong></div>
+							Please note that a description of the genres is available below in the section <a href="#genresDescription">Design details</a>.
+						</p>
+						<h3>The team</h3>
+						<p>
+							The team consisted of 6 people who did not know each other. The 5 other were in first year of higher education with <strong>3 programmers and 3 beginners</strong>.
+						</p>
+					</section>
+					<section>
+						<header>
+							<h2>Tech details</h2>
+						</header>
+						<p>
+							Made with <strong>Unity</strong>, coded in <strong>C#</strong>.
+							<ul class="contact">
+								<li>
+									<h3>Content generation</h3><br>
+									<ul class="divided">
+										<li>The missions are generated with a tree. The first depth of nodes contains the action, the second depth of nodes contains who or what is concerned by the action, and the next depths contain more details like why you have to take action or how
+											to do it. That way the missions have a description.</li>
+										<li>Each node also contains a list of needed attributes at lvl 1, so it is possible to calculate total attributes, money, points and experience at the wanted level. For example the “save” action needs speed.</li>
+										<li>For the heroes' generation we had a bank of images representing the classical DC or Marvel heroes and others. For each image, we chose the associated attributes and different possibilities for their name.</li>
+										<li>Finally, we introduced a bit of random in all the calculus process for design purpose and we put all the elements together.</li>
+									</ul>
+								</li>
+								<li>
+									<h3>UI</h3>
+									<p><br> The UI is fully adaptable to the screen size. The cards have been designed with content generation in mind, so all elements can be resized, recolored or changed dynamically and all fit together.
+									</p>
+								</li>
+								<li>
+									<h3>Cards pooling</h3>
+									<p><br> The game doesn't need a high configuration but instancing is a pretty heavy operation so to be sure that the game would always run fluidly we implemented a simple pooling system for heroes and missions cards.
+									</p>
+								</li>
+								<li>
+									<h3>Sound manager</h3>
+									<p><br> Due to the high pace of the game, we had to create a sound system that could handle a lot of sounds in parallel. In addition, we wanted the system to dynamically change the music according to the loss conditions: if the player is about to
+										lose, the music becomes more urgent.
+									</p>
+								</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<header>
+							<h2>Design details</h2>
+						</header>
+						<h3>The art</h3>
+						<p>
+							The art direction is <strong>fully inspired by old comics</strong>. Each hero is represented by a card just <strong>like a comic's cover</strong>, where his name, his abilities, his price and his salary are displayed. This way <strong>all the information is part of the diegesis
+							of the game</strong>. The whole frame tends to <strong>replicate a comic page</strong> separating the frames with white stripes.
+						</p>
+						<h3 id="genresDescription">The genres</h3>
+						<p>
+							The following descriptions have been given by the jam staff. This section does not give details on the game himself, but we used these definitions to design the game.
+						</p>
+						<details>
+							<summary>
+								<p><a>Genres: Continue Reading / Close</a></p>
+							</summary>
+
+							<h4>Arcade</h4>
+							<p>
+								The goal of an arcade game is to make the best performance through multiple sessions. We thus find games with repetitive features and whose duration is, for the most part, relatively short. The player's performance level is normally identified by his
+								score. There may be some form of progression that causes the player to go as far as possible, see until the end of the game. Each arcade game contains an end-of-game condition that requires the player to start over at the beginning. The difficulty
+								level of this style of play is usually high and having a steep learning curve. Roguelike type games easily enter the Arcade category in the context of a GameJam.<br>Examples: (Arcade) Super Crate Box, (Arcade and Competition) Mario vs
+								Luigi, (Arcade and Survival) Crypt of the Necrodancer, Binding of Isaac.
+							</p>
+							<h4>Management</h4>
+							<p>
+								A management game sets up mechanisms, activities, an economy that the player must control and amalgamate in order to create a balance or progress in the world of the game. The video game management focuses on the resource management in order to thrive,
+								it relies heavily on planning and compels the reconciliation of short-term and long-term conflicting demands.<br>Examples: (Management and puzzle) Game Dev Tycoon, (Management and Race) Grand Prix Story, (Management and survival) Shelter,
+								(Management Adventure) Door Kickers, (Management, competition and strategy) Civilization.
+							</p>
+							<h4>Race</h4>
+							<p>
+								A racing game is a game whose goal is usually to progress as fast as possible from one point to another point to win. The search for speed is usually about getting to the goal first, beating a countdown, reducing a completion time, or just to survive.
+								<br>Examples: (Racing and Adventure) GTA, Need for Speed ​​Hot Pursuit, (Race and Survival) Distance, (Race and Puzzle) Nimbus, Tile Rider, (Race and Multiplayer Competition) SpeedRunner, (Racing and Exploration) Hover: Revolt Of Gamers, Mirror
+								Edge.
+							</p>
+						</details>
+
+
+						<h3>Theme and genres integration</h3>
+						<p>
+							Soon available.
+						</p>
+					</section>
+					<section>
+						<header>
+							<h2>Postmortem</h2>
+						</header>
+						<p>
+							Soon available.
+						</p>
+					</section>
+				</article>
+
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="12u">
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul class="links">
+						<li>&copy; Thomas Caroff 2018. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/skel-viewport.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

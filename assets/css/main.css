@@ -1354,6 +1354,27 @@
 				background: #151112;
 			}
 
+		/* */
+
+
+		.construction {
+			-webkit-appearance: none;
+			display: inline-block;
+			text-decoration: none;
+			border: 100;
+			border-radius: 5px;
+			background: #ffff00;
+			color: #000 !important;
+			font-weight: 700;
+			outline: 0;
+			-moz-transition: background-color .25s ease-in-out;
+			-webkit-transition: background-color .25s ease-in-out;
+			-ms-transition: background-color .25s ease-in-out;
+			transition: background-color .25s ease-in-out;
+		}
+
+		/* */
+
 		input[type="button"].icon:before,
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
