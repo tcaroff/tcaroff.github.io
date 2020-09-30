@@ -1279,6 +1279,12 @@
 			padding: 0 1em 0 1em;
 		}
 
+		p.major {
+			position: relative;
+			text-align: center;
+			font-weight: 700;
+		}
+
 /* Box */
 
 	.box {
